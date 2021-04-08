@@ -21,10 +21,9 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h1" className={classes.title}>
+          <Typography variant="h5" className={classes.title}>
             모두를 위한 은퇴 계산기
           </Typography>
-          <Button color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>

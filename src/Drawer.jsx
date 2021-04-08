@@ -7,8 +7,9 @@ import {
   ListItemText
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import InfoIcon from '@material-ui/icons/Info';
+import AppsIcon from '@material-ui/icons/Apps';
 import { withRouter } from "react-router-dom";
 //상단 AppBar 추가
 //import AppBar from "@material-ui/core/AppBar";
@@ -24,17 +25,17 @@ const Drawer = props => {
   const classes = useStyles();
   const itemsList = [
     {
-      text: "Home",
-      icon: <InboxIcon />,
+      text: "Dashboard",
+      icon: <AppsIcon />,
       onClick: () => history.push("/")
     },
     {
-      text: "About",
-      icon: <MailIcon />,
+      text: "About Us",
+      icon: <InfoIcon />,
       onClick: () => history.push("/about")
     },
     {
-      text: "Contact",
+      text: "Contact Us",
       icon: <MailIcon />,
       onClick: () => history.push("/contact")
     }
