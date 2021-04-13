@@ -26,19 +26,19 @@ const CompoundInterest = () => {
         >
           <form>
             <TextField
-              label="What is the principal?"
+              label="설정금액(투자원금)"
               variant="outlined"
               type="number"
               onChange={(e) => setPrincipal(e.target.value)}
             />
             <TextField
-              label="How many years?"
+              label="투자기간(연)"
               variant="outlined"
               type="number"
               onChange={(e) => setYears(e.target.value)}
             />
             <TextField
-              label="Annual Interest rate?"
+              label="연평균 목표수익률(%)"
               variant="outlined"
               type="number"
               onChange={(e) => setInterest(e.target.value / 100)}
@@ -52,7 +52,7 @@ const CompoundInterest = () => {
                 calculate();
               }}
             >
-              Calculate
+              계산하기!
             </Button>
             <br />
             <br />
