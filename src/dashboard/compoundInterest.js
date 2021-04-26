@@ -10,7 +10,6 @@ const CompoundInterest = () => {
   
     const calculate = () => {
       // A=p(1+(r/n))^(nt)
-      //은퇴 후 자산 = (원금*수익률)^은퇴시기 + 저축액
       const result = principal * Math.pow(1 + interest, years);
       setResult(result.toFixed(2));
     };
