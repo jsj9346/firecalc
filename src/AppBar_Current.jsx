@@ -20,11 +20,11 @@ export default function ButtonAppBar() {
   return (
     <div className={classes.root}>
       <AppBar position="static">
-        <Toolbar>
+        <toolbar>
           <Typography variant="h5" className={classes.title}>
             모두를 위한 은퇴 계산기
           </Typography>
-        </Toolbar>
+        </toolbar>
       </AppBar>
     </div>
   );

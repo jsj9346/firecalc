@@ -1,16 +1,11 @@
 import React from "react";
-import {
-  Drawer as MUIDrawer,
-  ListItem,
-  List,
-  ListItemIcon,
-  ListItemText
-} from "@material-ui/core";
+import {Drawer as MUIDrawer, ListItem, List, ListItemIcon, ListItemText} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import MailIcon from "@material-ui/icons/Mail";
 import InfoIcon from '@material-ui/icons/Info';
 import AppsIcon from '@material-ui/icons/Apps';
 import { withRouter } from "react-router-dom";
+import AppBar from "./AppBar_Current";
 //상단 AppBar 추가
 //import AppBar from "@material-ui/core/AppBar";
 

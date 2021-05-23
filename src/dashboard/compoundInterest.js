@@ -26,7 +26,7 @@ return (
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: "40vh",
+            height: "70vh",
           }}
         >
           <form>
@@ -61,11 +61,8 @@ return (
             </Button>
             <br />
             <div style={{ fontSize: "30px" }}>금액 : {result}</div>
-            {/* 일단 요기에다가 테이블작업 시작*/}
+            <ReferenceTable></ReferenceTable>
             <br />
-            <div>
-              <ReferenceTable></ReferenceTable>
-            </div>
           </form>
         </div>  
       </>
