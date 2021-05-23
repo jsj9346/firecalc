@@ -8,7 +8,7 @@ import { Route, Switch } from "react-router-dom";
 import Drawer from "./Drawer";
 import { makeStyles } from "@material-ui/core/styles";
 //AppBar 추가
-import AppBar from "@material-ui/core/AppBar";
+import AppBar from "./AppBar";
 
 const useStyles = makeStyles({
   container: {
@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 export default function App() {
   const classes = useStyles();
   return (
-    
     <div className={classes.container}>
       <Drawer />
       <Switch>
