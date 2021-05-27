@@ -2,7 +2,7 @@ import React from "react";
 import CompoundInterest from "./dashboard/compoundInterest";
 
 const Dashboard = props => {
-  return <CompoundInterest></CompoundInterest>;
+  return <div><CompoundInterest></CompoundInterest></div>;
   
   
 };

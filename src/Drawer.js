@@ -5,8 +5,9 @@ import MailIcon from "@material-ui/icons/Mail";
 import InfoIcon from '@material-ui/icons/Info';
 import AppsIcon from '@material-ui/icons/Apps';
 import { withRouter } from "react-router-dom";
-//상단 AppBar 추가
-import Appbar from './Appbar';
+import Divider from "@material-ui/core/Divider";
+
+const drawerWidth = 240;
 
 const useStyles = makeStyles({
   drawer: {
@@ -34,19 +35,26 @@ const Drawer = props => {
       onClick: () => history.push("/contact")
     }
   ];
-  return (
-    <MUIDrawer variant="permanent" className={classes.drawer}>
-      <List>
-        {itemsList.map((item, index) => {
-          const { text, icon, onClick } = item;
-          return (
-            <ListItem button key={text} onClick={onClick}>
-              {icon && <ListItemIcon>{icon}</ListItemIcon>}
-              <ListItemText primary={text} />
-            </ListItem>
-          );
-        })}
-      </List>
+  return (    
+    <MUIDrawer
+     variant="permanent"
+     className={classes.drawer}
+     classes={{paper: classes.drawerPaper,}}
+     anchor="left"
+     >
+      <Divider />
+        <List>
+          {itemsList.map((item, index) => {
+            const { text, icon, onClick } = item;
+            return (
+              <ListItem button key={text} onClick={onClick}>
+                {icon && <ListItemIcon>{icon}</ListItemIcon>}
+                <ListItemText primary={text} />
+              </ListItem>
+            );
+          })}
+        </List>
+      <Divider />
     </MUIDrawer>
   );
 };
