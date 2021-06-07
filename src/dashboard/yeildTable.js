@@ -50,7 +50,10 @@ class CreateTable extends Component {
           </TableHead>
           <TableBody>
             {AssetData.map(c=>{
-                return <Asset key={c.nations} nations={c.nations} assetclass={c.assetclass} period={c.period} CAGR={c.CAGR} />
+                return <Asset key={c.nations}
+                 nations={c.nations}
+                 assetclass={c.assetclass}
+                 period={c.period} CAGR={c.CAGR} />
               })}     
           </TableBody>
         </Table>
